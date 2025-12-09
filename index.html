@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para una persona especial 🐱</title>
+    <style>
+        /* --- ESTILOS GENERALES --- */
+        :root {
+            --color-principal: #FFB7B2; /* Rosa pastel */
+            --color-secundario: #E2F0CB; /* Verde pastel suave */
+            --color-texto: #555;
+            --color-fondo: #FFF5F5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #E68A86;
+        }
+
+        /* --- ENCABEZADO (HERO) --- */
+        header {
+            background: linear-gradient(135deg, #FFB7B2, #FFDAC1);
+            padding: 60px 20px;
+            color: white;
+            border-bottom-left-radius: 50% 20%;
+            border-bottom-right-radius: 50% 20%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            color: white;
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* --- CONTENEDORES --- */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* --- SECCIÓN DE GATOS --- */
+        .cat-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .cat-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .cat-card:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+
+        .cat-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* --- SECCIÓN DEL COLLAR --- */
+        .special-section {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 50px;
+            border: 2px dashed var(--color-principal);
+            position: relative;
+        }
+
+        .special-section img {
+            max-width: 250px;
+            border-radius: 50%;
+            border: 5px solid var(--color-secundario);
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        /* --- BOTÓN --- */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background-color: var(--color-principal);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #E68A86;
+        }
+
+        /* --- PIE DE PÁGINA --- */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>¡Hola, Ale! 💖</h1>
+        <p>Esta página es para ti, porque te encantan los detalles.</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>🐱 Mundo Gatuno 🐱</h2>
+            <p>Sé que los gatos te alegran el día, así que aquí hay algunos muy lindos:</p>
+            
+            <div class="cat-gallery">
+                <div class="cat-card">
+                    <img src="imagenes/gatitolindo.png" alt="Gatito 1">
+                </div>
+                <div class="cat-card">
+                    <img src="imagenes/gatittoaokoakokodkadkai.jpg" alt="Gatito 2">
+                </div>
+                <div class="cat-card">
+                    <img src="imagenes/gato.png" alt="Gatito 3">
+                </div>
+            </div>
+        </section>
+
+        <section class="special-section">
+            <h2>✨ El Collar Especial ✨</h2>
+            <p>Este detalle es tan único como tú.</p>
+            
+            <img src="imagenes/collar hermoso.webp  " alt="El Collar">
+            
+            <br>
+            <p>Espero que te guste mucho.</p>
+            <a href="#" class="btn" onclick="alert('¡Espero que te encante! ❤️')">Click para una sorpresa</a>
+        </section>
+    </div>
+
+    <footer>
+        Hecho con ❤️ especialmente para ti.
+    </footer>
+
+</body>
+</html>
